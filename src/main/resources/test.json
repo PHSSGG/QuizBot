@@ -1,0 +1,40 @@
+{
+  "id": "0",
+  "name": "Test",
+  "description": "The default quiz",
+  "creatorId": 524999640538677280,
+  "questions": [
+    {
+      "0": {
+        "description": "Who's the creator of this bot?",
+        "answers": [
+          {
+            "phss": {
+              "name": "phss",
+              "isCorrect": true
+            },
+            "papa": {
+              "name": "papa",
+              "isCorrect": false
+            }
+          }
+        ]
+      },
+      "1": {
+        "description": "For what this bot will be used?",
+        "answers": [
+          {
+            "summer_olympic": {
+              "name": "This bot will compete on the summer olympic",
+              "isCorrect": false
+            },
+            "application": {
+              "name": "This will be used in the application at Orbital Studios",
+              "isCorrect": true
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
