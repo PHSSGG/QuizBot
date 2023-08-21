@@ -27,8 +27,8 @@ public class UserRepository implements DataRepository<Long, UserAccount> {
 
     public UserAccount createAccount(long userId) {
         UserAccount account = new UserAccount(userId, new ArrayList<>(), new ArrayList<>());
-        accounts.put(userId, account);
 
+        save(account);
         return account;
     }
 

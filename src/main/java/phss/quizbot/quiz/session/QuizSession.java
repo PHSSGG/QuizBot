@@ -20,15 +20,15 @@ public class QuizSession {
     boolean isPaused = false;
 
     public QuizSession(UserAccount userAccount, Quiz quiz) {
-        this(UUID.randomUUID(), userAccount, quiz, 0, new HashMap<>());
+        this(UUID.randomUUID(), userAccount, quiz);
     }
 
-    public QuizSession(UUID sessionId, UserAccount userAccount, Quiz quiz, int currentQuestion, HashMap<Integer, Boolean> answers) {
+    public QuizSession(UUID sessionId, UserAccount userAccount, Quiz quiz) {
         this.sessionId = sessionId;
         this.userAccount = userAccount;
         this.quiz = quiz;
-        this.currentQuestion = currentQuestion;
-        this.answers = answers;
+        this.currentQuestion = 0;
+        this.answers = new HashMap<>();
     }
 
     public QuizQuestion getCurrentQuestion() {
