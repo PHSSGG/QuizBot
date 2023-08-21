@@ -65,7 +65,7 @@ public class QuizAnswerListener extends ListenerAdapter {
 
         QuizQuestion currentQuestion = session.getCurrentQuestion();
 
-        if (selectedAnswerPosition > currentQuestion.getAnswers().size() || selectedAnswerPosition < currentQuestion.getAnswers().size()) return null;
+        if (selectedAnswerPosition > currentQuestion.getAnswers().size() || selectedAnswerPosition < 0) return null;
         return currentQuestion.getAnswers().get(selectedAnswerPosition - 1);
     }
 
