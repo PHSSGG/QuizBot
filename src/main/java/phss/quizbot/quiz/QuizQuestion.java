@@ -27,7 +27,7 @@ public class QuizQuestion {
         return answers;
     }
 
-    static class QuizQuestionAnswer {
+    public static class QuizQuestionAnswer {
         String name;
         boolean isCorrect;
 
