@@ -15,7 +15,11 @@ public class Quiz {
     long creatorId;
 
     public Quiz(String name, String description, List<QuizQuestion> questions, long creatorId) {
-        this.quizId = UUID.randomUUID();
+        this(UUID.randomUUID(), name, description, questions, creatorId);
+    }
+
+    public Quiz(UUID quizId, String name, String description, List<QuizQuestion> questions, long creatorId) {
+        this.quizId = quizId;
         this.name = name;
         this.description = description;
         this.questions = questions;
