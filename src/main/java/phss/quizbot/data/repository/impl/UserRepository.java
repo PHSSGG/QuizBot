@@ -25,6 +25,13 @@ public class UserRepository implements DataRepository<Long, UserAccount> {
         return Optional.ofNullable(accounts.get(key));
     }
 
+    public UserAccount createAccount(long userId) {
+        UserAccount account = new UserAccount(userId, new ArrayList<>(), new ArrayList<>());
+        accounts.put(userId, account);
+
+        return account;
+    }
+
     @Override
     public void save(UserAccount data) {
         accounts.put(data.getUserId(), data);
